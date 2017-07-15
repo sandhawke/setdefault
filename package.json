@@ -1,0 +1,28 @@
+{
+  "name": "setdefault",
+  "version": "1.0.0",
+  "description": "Lookup key-value, but set it if missing, as in Python",
+  "main": "setdefault.js",
+  "scripts": {
+    "test": "standard && tap --cov test-setdefault.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandhawke/setdefault.git"
+  },
+  "keywords": [
+    "default",
+    "python",
+    "map"
+  ],
+  "author": "Sandro Hawke (http://hawke.org/sandro)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sandhawke/setdefault/issues"
+  },
+  "homepage": "https://github.com/sandhawke/setdefault#readme",
+  "devDependencies": {
+    "tap": "^10.7.0",
+    "tape": "^4.7.0"
+  }
+}
