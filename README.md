@@ -4,10 +4,11 @@ Small utility function, which I got used to in Python and miss in JS.
 The name is a little misleading, but that's the name in Python.  I
 think of it as "get (after setting, if necessary)".
 
-It's for that pattern where if a key hasn't been used yet, you have to
-first set it to a default value.
+This is useful for that pattern where if a key hasn't been used yet,
+you have to first set it to a default value.
 
-In typical JS, you end up either doing the lookup twice, or having extra variables floating around.
+In typical JS, you end up either doing the lookup twice, or having
+extra variables floating around.
 
 Replace this:
 ```js
@@ -44,8 +45,7 @@ function f () {
 }
 ```
 
-We also have pre-defined variations for the empty object and map
-to avoid extra garbage collection:
+We also have pre-defined variations for some common cases, just to make them a tiny bit more efficient (no extra object to garbage collect), maybe.
 * setdefault.array == setdefault.lazy( , , () => [])
 * setdefault.object == setdefault.lazy( , , () => ({}))
 * setdefault.map == setdefault.lazy( , , () => new Map())  
